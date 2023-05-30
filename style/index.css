@@ -43,15 +43,16 @@ form {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 360px;
+    /* align-items: center; */
+    width: 300px;
     /* Adjust the width as needed */
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left;
 }
 
 input[type="text"],
@@ -66,15 +67,16 @@ select {
 }
 
 button[type="submit"] {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 table {
@@ -86,7 +88,8 @@ table th,
 table td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #dcd7d7;
+    /* border-top: 1px solid #ddd; */
 }
 
 footer {
