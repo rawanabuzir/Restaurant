@@ -48,7 +48,7 @@ In the context of JSON format in JavaScript, here are the main points to focus o
  <hr> 
 The Local storage :
 
-<br>
+<br><br>
 Local storage is a web browser feature that allows web applications to store data persistently on a user's device. It provides a simple key-value storage mechanism and is often used to store small amounts of data for web applications.
 <br>
 Key-Value Storage: Local storage stores data in a key-value format, similar to an object. Each piece of data is associated with a unique key. The key is used to retrieve or update the corresponding data value.
