@@ -14,17 +14,22 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-            </ul>
-        </nav>
+        <div class="logo-container">
+            <img src="./img1.png" alt="Logo">
+            <h1>Rawan's Food</h1>
+        </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="statistics.html">statistics Page</a></li>
+        </ul>
+    </nav>
     <main>
         <br>
         <form id="foodForm">
             <label for="foodName">Food Name:</label>
-            <input type="text" id="foodName" required>
+            <input type="text" id="foodName" name="foodName" required>
 
             <label for="foodType">Types of Food:</label>
             <select id="foodType">

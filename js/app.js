@@ -38,7 +38,8 @@ document.getElementById('foodForm').addEventListener('submit',
         event.preventDefault();
 
         const foodId = new Food().generateId();
-        const foodName = document.getElementById('foodName').value;
+        // const foodName = document.getElementById('foodName').value;
+        const foodName = event.target.foodName.value;
         const foodType = document.getElementById('foodType').value;
         // const foodPrice = document.getElementById('price').value;
         // const foodPrice = parseInt(document.getElementById('price').value);
