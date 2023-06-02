@@ -120,18 +120,23 @@ button[type="submit"] {
     font-size: 14px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+#clearButton {
+    background-color: #19A7CE;
+    color: #F6F1F1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-table th,
-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #AFD3E2;
+#buttonContainer {
+    display: flex;
+    gap: 10px;
 }
+
 
 footer {
     background-color: #19A7CE;

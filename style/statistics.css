@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F6F1F1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #AFD3E2;
+    color: #19A7CE;
+    padding: 20px;
+    padding-left: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    height: 40px;
+    /* Adjust the height as needed */
+    margin-right: 10px;
+    /* Add margin as needed */
+}
+
+
+nav {
+    background-color: #19A7CE;
+    color: #F6F1F1;
+    padding: 20px;
+    font-size: 25px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-family: 'Shadows Into Light', cursive;
+    top: 0;
+    bottom: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+nav ul li a {
+    color: #F6F1F1;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* font-family: 'Shadows Into Light', cursive; */
+    align-items: center;
+    margin-left: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #AFD3E2;
+}
+
+footer {
+    background-color: #19A7CE;
+    color: #F6F1F1;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #F6F1F1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #F6F1F1;
+    text-decoration: none;
+}
