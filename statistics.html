@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rawan's Food</title>
-    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <link rel="stylesheet" type="text/css" href="./style/statistics.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -26,32 +26,21 @@
         </ul>
     </nav>
     <main>
-        <br>
-        <form id="foodForm">
-            <label for="foodName">Food Name:</label>
-            <input type="text" id="foodName" name="foodName" required>
+        <table id="foodTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Food Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
 
-            <label for="foodType">Types of Food:</label>
-            <select id="foodType">
-                <option value="Fruit and vegetables">Fruit and vegetables</option>
-                <option value="Starchy food">Starchy food</option>
-                <option value="Dairy">Dairy</option>
-                <option value="Protein">Protein</option>
-                <option value="Fat">Fat</option>
-            </select>
-
-            <label for="price">Price:</label>
-            <input type="text" id="price" name="foodPrice" required>
-            <br>
-            <div id="buttonContainer">
-                <button type="submit">Submit</button>
-                <button id="clearButton">Clear</button>
-            </div>
-        </form>
-
-        <br>
+            </tbody>
+        </table>
     </main>
-
+    <br>
     <footer>
         <div class="social-media">
             <ul>
@@ -64,7 +53,7 @@
         <p>&copy; 2023 Rawan Food. All rights reserved.</p>
     </footer>
 
-    <script src="./js/app.js"></script>
+    <script src="./js/statistics.js"></script>
 </body>
 
 </html>

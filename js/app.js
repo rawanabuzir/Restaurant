@@ -11,43 +11,25 @@ Food.prototype.generateId = function () {
     let randomNumber = Math.floor(Math.random() * 9000) + 1000;
     return randomNumber;
 };
-Food.prototype.render = function () {
-    const table = document.getElementById('foodTable');
-    const row = document.createElement('tr');
-    const idCell = document.createElement('td');
-    idCell.textContent = this.id;
-    row.appendChild(idCell);
 
-    const nameCell = document.createElement('td');
-    nameCell.textContent = this.name;
-    row.appendChild(nameCell);
+document.getElementById('foodForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    const typeCell = document.createElement('td');
-    typeCell.textContent = this.type;
-    row.appendChild(typeCell);
+    const localData = JSON.parse(localStorage.getItem('foodData')) || [];
+    const foodId = new Food().generateId();
+    const foodName = event.target.foodName.value;
+    const foodType = document.getElementById('foodType').value;
+    const foodPrice = parseFloat(document.getElementById('price').value);
+    const food = new Food(foodId, foodName, foodType, foodPrice);
 
-    const priceCell = document.createElement('td');
-    priceCell.textContent = this.price;
-    row.appendChild(priceCell);
+    localData.push(food);
+    localStorage.setItem('foodData', JSON.stringify(localData)); //+++ JSON.stringify() method converts a JavaScript object or array into a JSON string
 
-    table.appendChild(row);
-};
+    event.target.foodName.value = '';
+    event.target.foodPrice.value = '';
+});
 
-document.getElementById('foodForm').addEventListener('submit',
-    function (event) {
-        event.preventDefault();
-
-        const foodId = new Food().generateId();
-        const foodName = document.getElementById('foodName').value;
-        const foodType = document.getElementById('foodType').value;
-        // const foodPrice = document.getElementById('price').value;
-        // const foodPrice = parseInt(document.getElementById('price').value);
-        const foodPrice = parseFloat(document.getElementById('price').value);
-
-
-
-        const food = new Food(foodId, foodName, foodType, foodPrice);
-
-
-        food.render();
-    });
+document.getElementById('clearButton').addEventListener('click', function (event) {
+    event.preventDefault();
+    localStorage.removeItem('foodData');
+});
